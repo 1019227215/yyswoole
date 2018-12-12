@@ -36,15 +36,15 @@ http://你的域名/index.html
 ### 路由规则
 跟yii的驼峰写法一样的命名规则
 * 控制器访问方式目录名/文件名/方法名.php或.html结尾访问
-控制器必须是首字母大写Controller.class.php结尾（IndexController.class.php）
-class名称必须与文件名同名（IndexController）并且继承Controller
-model及其他工具类都以.class.php结尾即可调用
+1. 控制器必须是首字母大写Controller.class.php结尾（IndexController.class.php）
+2. class名称必须与文件名同名（IndexController）并且继承Controller
+3. model及其他工具类都以.class.php结尾即可调用。
 * 控制器和类都支持无限目录分类
 
 ### 静态文件生成
-访问html结尾页面不存在时会去找对应的控制器及方法，然后生成html存到对应路径
-访问php结尾页面去找对应控制及方法，然后生成html存到对应路径
-简单讲就是html只首次更新静态内容，php会每次会更新静态内容
+1. 访问html结尾页面不存在时会去找对应的控制器及方法，然后生成html存到对应路径
+2. 访问php结尾页面去找对应控制及方法，然后生成html存到对应路径
+3. 简单讲就是html只首次更新静态内容，php会每次会更新静态内容
 ```php
     public function actionIndex()
     {
