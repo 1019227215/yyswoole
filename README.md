@@ -1,13 +1,12 @@
 ![yys](https://github.com/1019227215/yyswoole/blob/master/Public/image/nh.png)  
 # yyswoole
 ##### yyswoole 群：75457153
-[plain]
 * 版本要求：
   * `swoole` 4.2.1+
   * `php` 7.0+
 * `yyswoole`是基于`swoole`封装的极简框架，支持动静分离，生成静态页面、线上/开发/测试一套代码等
-* 框架只是辅助，思路才是王道；再牛逼的框架也挡不住程序bug，再牛逼的程序也挡不住DDOS，`yyswoole`只是一块空地，造车造船任你造
-* 访问流程大致如下：
+* 框架只是辅助，思路才是王道；再牛逼的框架也挡不住程序`bug`，再牛逼的程序也挡不住`DDOS`，`yyswoole`是一块空地，造车造船任你造。项目运行流程如下：
+
 ![yys](https://github.com/1019227215/yyswoole/blob/master/Public/image/yys.png)
 ##### 第一步配置config下的main.php
 ```php
