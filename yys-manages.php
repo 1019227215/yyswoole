@@ -1,13 +1,12 @@
 <?php
-
 /**
  * 入口文件
  * Created by PhpStorm.
- * User: zhangyu
+ * User: yyswoole
  * Date: 2018/11/12
  * Time: 11:11
  */
-//date_default_timezone_set('Asia/Shanghai');//('America/Los_Angeles');
+
 define('S_ROOT', __DIR__);
 define('Cl', 'controller');
 define('Di', 'action');
@@ -59,11 +58,9 @@ try {
         if (isset($request->get['reload']) && $request->get['reload'] == "yes") {
 
             if ($user != 'root') {
-                exit;
-                /*swoole_async::exec("kill -USR2 {$http->worker_pid}", function ($result, $status) {
-
+                swoole_async::exec("kill -USR2 {$http->worker_pid}", function ($result, $status) {
                     exit;
-                });*/
+                });
             }else{
                 $http->reload(true);
             }
