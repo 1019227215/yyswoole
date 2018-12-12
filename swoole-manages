@@ -1,0 +1,21 @@
+#! /bin/sh
+
+dir=$( pwd )
+mandir=${dir}/yys-manages.php
+logdir=${dir}/log/http-swoole.log
+phpdir=$(ps aux |grep "php-fpm.conf" |awk -F "(" '{print $2}' |awk -F "php-fpm.conf)" '{print $1}')../bin/php
+
+if [ $1 != "" ];then
+if [ $1 == start ];then
+    echo $(nohup ${phpdir} ${mandir} > ${logdir} &)
+elif [ $1 == restart ];then
+    echo $(kill -9 $(ps aux|grep ${mandir} |awk '{print $2}'))
+    echo $(nohup ${phpdir} ${mandir} > ${logdir} &)
+elif [ $1 == stop ];then
+    echo $(kill -9 $(ps aux|grep ${mandir} |awk '{print $2}'))
+else
+    echo "Provide command：start|restart|stop "
+fi
+else
+    echo "Provide command：start|restart|stop "
+fi
