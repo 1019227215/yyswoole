@@ -5,8 +5,8 @@
   * `swoole` 4.2.1+
   * `php` 7.0+
 * `yyswoole`是基于`swoole`封装的极简框架，支持动静分离，生成静态页面、线上/开发/测试一套代码等
-* 框架只是辅助，思路才是王道；再牛逼的框架也挡不住程序`bug`，再牛逼的程序也挡不住`DDOS`，`yyswoole`是一块空地，造车造船任你造。项目运行流程如下：
-
+* 框架只是辅助，思路才是王道；再牛逼的框架也挡不住程序`bug`，再牛逼的程序也挡不住`DDOS`，`yyswoole`是一块空地，造车造船任你造
+* yyswoole支持热更代码，只需要在get时加上reload=yes即可 项目运行流程如下：
 ![yys](https://github.com/1019227215/yyswoole/blob/master/Public/image/yys.png)
 ##### 第一步配置config下的main.php
 ```php
@@ -30,14 +30,14 @@
     sh swoole-manages start
     
     tailf log/http-swoole.log 
-    #Swoole http server is started at http://www.bwbj.net:80
+    #Swoole http server is started at http://www.你的域名.com:80
     #显示上面内容表示成功！
 ```
 
 ##### 第三步访问网站
-http://你的域名/index.html
-支持（.php|.html）
-成功访问表示你可以开始撸了干吧伙计！
+* http://你的域名/index.html
+* 支持（.php|.html）
+* 成功访问表示你可以开始撸了干吧伙计！
 
 ### 路由规则
 跟yii的驼峰写法一样的命名规则
