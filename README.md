@@ -15,7 +15,7 @@
         '127.0.0.1' => [//内网ip（linux使用ifconfig获取，使用eth0里的ip）
             'mysql' => 'db',//默认连接mysql数据库配置
             'redis' => 'db',//当前环境默认连接redis配置
-            'domainname' => 'www.test.com',//当前环境解析的域名或者ip
+            'domainname' => 'www.你的域名.com',//当前环境解析的域名或者ip
             'port' => 80,//当前环境监听的端口
             'safety' => ['chroot' => S_ROOT, 'group' => 'www', 'user' => 'www',],//代码默认目录、起任务进程的用户
         ],
