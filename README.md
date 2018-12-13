@@ -5,7 +5,7 @@
 * 版本要求：
   * `swoole` 4.2.1+
   * `php` 7.0+
-* `yyswoole`是基于`swoole`封装的极简框架，支持动静分离，生成静态页面、线上/开发/测试一套代码等
+* `yyswoole`是基于`swoole`封装的极简框架，支持动静分离，生成静态页面、代码热更、线上/开发/测试一套代码等
 * 框架只是辅助，思路才是王道；再牛逼的框架也挡不住程序`bug`，再牛逼的程序也挡不住`DDOS`，`yyswoole`是一舞台，任你飞舞任你造
 * yyswoole支持热更代码，只需要在get时加上reload=yes即可 项目运行流程如下：
 ![yys](https://github.com/1019227215/yyswoole/blob/master/Public/image/yys.png)
